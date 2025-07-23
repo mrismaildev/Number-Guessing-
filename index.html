@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DomProject</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet">
+
+
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="grid justify-center items-center min-h-screen">
+  
+  <div class="bg-teal-100 p-5">
+  <div class="max-w-[1170px] m-auto">
+
+
+
+<input type="text" placeholder="Your Name" class="input input-success block my-5"  id="inputNames" />
+
+<div role="alert" class="alert alert-warning  w-[300px] hidden" id="nameError" >
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+  </svg>
+  <span>Warning: Invalid Name !</span>
+</div>
+
+
+<input type="email"placeholder="Your email" class="input input-success block my-5" id="inputEmail" />
+
+
+<div role="alert" class="alert alert-warning  w-[300px] hidden" id="emailError">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+  </svg>
+  <span>Warning: Invalid Email Address !</span>
+</div>
+
+
+
+<input type="password" placeholder="Your number" class="input input-success block my-5" id="inputNumber" />
+
+<div role="alert" class="alert alert-warning  w-[300px] hidden" id="numberError">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+  </svg>
+  <span>Warning: Invalid password  !</span>
+</div>
+
+<button class="btn btn-warning mt-5" id="loginBtn">Login</button>
+
+
+
+<div role="alert" class="alert alert-success hidden" id="inputSuccess">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  <span>Your information has been confirmed!</span>
+</div>
+
+
+  </div>
+ </div>
+
+
+<!-- ======1st screen=====  -->
+<div class=" text-black bg-white p-[35px] text-center" id="firstScreen">
+<h1 class="font-poppins text-5xl font-bold ">Wanna Play game?</h1>
+
+ <input  type="text" 
+      placeholder="What is your name"
+       class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]" id="playerOne"> 
+
+  
+<button 
+class="text-[32px] font-poppins font-bold text-white py-[10px] px-[33px] rounded-[53px] bg-btn" id="startBtn">Start Game</button>
+
+<div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden" id="nameErrors">! Name Is Missing</div>
+</div>
+<!-- ======1st screen=====  -->
+
+<!-- ====2nd Screen====  -->
+
+<div class=" text-black bg-white p-[35px] text-center hidden" id="secenodPlayer">
+  <h1 class="font-poppins text-5xl font-bold">Player-1</h1>
+
+  <input type="text" placeholder="What is your name"
+    class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
+    id="playerOne">
+
+
+  <button class="text-[32px] font-poppins font-bold text-white py-[10px] px-[33px] rounded-[53px] bg-btn"
+    id="startBtn">Start Game</button>
+
+  <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
+    id="nameErrors">! Name Is Missing</div>
+</div>
+<!-- ====2nd Screen====  -->
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
