@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DomProject</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
 
   <link rel="stylesheet" href="src/output.css">
 </head>
+
 <body class="grid justify-center items-center min-h-screen">
-  
-  <div class="bg-teal-100 p-5">
+
+  <!-- <div class="bg-teal-100 p-5">
   <div class="max-w-[1170px] m-auto">
-
-
-
-<input type="text" placeholder="Your Name" class="input input-success block my-5"  id="inputNames" />
+<input type="text" placeholder="Your Name" class="input input-success block my-5"  id="inputNames">
 
 <div role="alert" class="alert alert-warning  w-[300px] hidden" id="nameError" >
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -29,9 +28,7 @@
   </svg>
   <span>Warning: Invalid Name !</span>
 </div>
-
-
-<input type="email"placeholder="Your email" class="input input-success block my-5" id="inputEmail" />
+<input type="email" placeholder="Your email" class="input input-success block my-5" id="inputEmail" >
 
 
 <div role="alert" class="alert alert-warning  w-[300px] hidden" id="emailError">
@@ -44,7 +41,7 @@
 
 
 
-<input type="password" placeholder="Your number" class="input input-success block my-5" id="inputNumber" />
+<input type="password" placeholder="Your number" class="input input-success block my-5" id="inputNumber">
 
 <div role="alert" class="alert alert-warning  w-[300px] hidden" id="numberError">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -68,44 +65,115 @@
 
 
   </div>
- </div>
+ </div> -->
 
 
-<!-- ======1st screen=====  -->
-<div class=" text-black bg-white p-[35px] text-center" id="firstScreen">
-<h1 class="font-poppins text-5xl font-bold ">Wanna Play game?</h1>
+  <!-- ======1st screen name=====  -->
+  <div class=" text-black bg-white p-[35px] text-center" id="firstScreen">
+    <h1 class="font-poppins text-5xl font-bold ">Wanna Play game?</h1>
 
- <input  type="text" 
-      placeholder="What is your name"
-       class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]" id="playerOne"> 
-
-  
-<button 
-class="text-[32px] font-poppins font-bold text-white py-[10px] px-[33px] rounded-[53px] bg-btn" id="startBtn">Start Game</button>
-
-<div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden" id="nameErrors">! Name Is Missing</div>
-</div>
-<!-- ======1st screen=====  -->
-
-<!-- ====2nd Screen====  -->
-
-<div class=" text-black bg-white p-[35px] text-center hidden" id="secenodPlayer">
-  <h1 class="font-poppins text-5xl font-bold">Player-1</h1>
-
-  <input type="text" placeholder="What is your name"
-    class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
-    id="playerOne">
+    <input type="text" placeholder="What is your name"
+      class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
+      id="playerOne">
 
 
-  <button class="text-[32px] font-poppins font-bold text-white py-[10px] px-[33px] rounded-[53px] bg-btn"
-    id="startBtn">Start Game</button>
+    <button class="text-[32px] font-poppins font-bold text-white py-[10px] px-[33px] rounded-[53px] bg-btn"
+      id="startBtn">Start Game</button>
 
-  <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
-    id="nameErrors">! Name Is Missing</div>
-</div>
-<!-- ====2nd Screen====  -->
+    <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
+      id="nameErrors">! Name Is Missing</div>
+  </div>
+  <!-- ======1st screen end=====  -->
+
+  <!-- ====1st Screen number====  -->
+  <div class=" text-black bg-white p-[35px] text-center hidden" id="secenodPlayer">
+    <h1 class="font-poppins text-5xl font-bold" id="pOneD"></h1>
+
+    <input type="number" placeholder="Give your number"
+      class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
+      id="playerOneInput">
 
 
-<script src="js/app.js"></script>
+    <button class="text-[32px] font-poppins font-bold text-white py-[10px]  px-[33px] rounded-[53px] bg-btn"
+      id="letsPlayOneBtn">Let’s Play</button>
+
+    <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
+      id="playerNameError">! Number Is Missing</div>
+  </div>
+  <!-- ====1st  Screen number====  -->
+
+
+  <!-- ====2nd Screen name====  -->
+  <div class=" text-black bg-white p-[35px] text-center hidden" id="secenoOnePlayer">
+    <h1 class="font-poppins text-5xl font-bold">Player - 2 Name</h1>
+
+    <input type="text" placeholder="Give your Name"
+      class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
+      id="playerTwoInput">
+
+
+    <button class="text-[32px] font-poppins font-bold text-white py-[10px]  px-[33px] rounded-[53px] bg-btn"
+      id="letsPlayTowBtn">Start Game</button>
+
+    <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
+      id="playerTowNameError">! Name Is Missing</div>
+  </div>
+  <!-- ====2nd Screen name====  -->
+
+  <!-- ====2nd Screen number====  -->
+  <div class=" text-black bg-white p-[35px] text-center hidden" id="secenoOnePlayerNumer">
+    <h1 class="font-poppins text-5xl font-bold" id="secndDyNam"></h1>
+
+    <input type="text" placeholder="Give your Number"
+      class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
+      id="playerTwoInputNum">
+
+
+    <button class="text-[32px] font-poppins font-bold text-white py-[10px]  px-[33px] rounded-[53px] bg-btn"
+      id="letsPlayTowBtntoo">Guess</button>
+
+    <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
+      id="playerTowNumberError">! Number Is Missing</div>
+  </div>
+  <!-- ====2nd Screen number====  -->
+
+
+  <!-- ====3rd Screen number====  -->
+  <div class="
+   text-black bg-white p-[35px] text-center hidden" id="thirdPlayerNumer">
+    <h1 class="font-poppins text-5xl font-bold">Final decision </h1>
+
+    <input type="text" placeholder="Give your Name"
+      class="block w-[886px] pl-[50px] py-[22px] rounded-full border border-[#D9D9D9] focus:outline outline-red-700 my-[30px]"
+      id="finalNumber">
+
+
+    <button class="text-[32px] font-poppins font-bold text-white py-[10px]  px-[33px] rounded-[53px] bg-btn"
+      id="finalBtn">Cheak Who Win</button>
+
+    <div class="w-[788px] m-auto bg-reds text-3xl font-poppins font-bold rounded text-white py-4 mt-4 hidden"
+      id="playerTowNumberError">! Number Is Missing</div>
+  </div>
+  <!-- ====3rd Screen number====  -->
+
+
+  <!-- ====win Screen====  -->
+  <div class="
+   text-black bg-white p-[35px] text-center hidden" id="winScreen">
+    <h1 class="font-poppins text-5xl font-bold" id="winOne"> </h1>    <h1 class="font-poppins text-5xl font-bold" id="wineTwo"> </h1>
+  </div>
+  <!-- ====win screeen====  -->
+
+
+
+
+
+
+
+
+
+
+  <script src="js/app.js"></script>
 </body>
+
 </html>
